@@ -151,6 +151,7 @@ func (repo CloudControllerAppSummaryRepository) GetSummary(appGuid string) (summ
 
 	return
 }
+
 func (repo CloudControllerAppSummaryRepository) GetSpaceSummaries(spaceGuid string) (apps []models.Application, apiErr error) {
 	resources := new(ApplicationSummaries)
 	path := fmt.Sprintf("%s/v2/spaces/%s/summary", repo.config.ApiEndpoint(), spaceGuid)

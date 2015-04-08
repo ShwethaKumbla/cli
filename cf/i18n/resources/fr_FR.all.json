@@ -2666,7 +2666,7 @@
    },
    {
       "id": "List all apps in space of targeted organization",
-      "translation": "List all apps in space of targeted organization",
+      "translation": "Liste de toutes les applications dans l'espace de l'organisation ciblé",
       "modified": false
    },
    {
@@ -5221,12 +5221,12 @@
    },
    {
       "id": "Space name (To see the apps in specified space of current organization)",
-      "translation": "Space name (To see the apps in specified space of current organization)",
+      "translation": "Nom de l'espace (pour voir les applications the l'espace specifié pour l'organisation courrante)",
       "modified": false
    },
    {
       "id": "    By default it will list all apps of current targeted space if '-s' flag is not provided.",
-      "translation": "    By default it will list all apps of current targeted space if '-s' flag is not provided.",
+      "translation": "    En défault toutes les logiciels seront lister pour l'espace ciblé si '-s' n'est pas fournit.",
       "modified": false
    }
 ]

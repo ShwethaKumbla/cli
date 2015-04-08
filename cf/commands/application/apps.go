@@ -69,11 +69,13 @@ func (cmd ListApps) Run(c *cli.Context) {
 				map[string]interface{}{"SpaceName": spaceName, "ApiErr": apiErr.Error()})))
 			return
 		}
+
 		cmd.ui.Say(T("Getting apps in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
 			map[string]interface{}{
 				"OrgName":   terminal.EntityNameColor(cmd.config.OrganizationFields().Name),
 				"SpaceName": terminal.EntityNameColor(space.Name),
 				"Username":  terminal.EntityNameColor(cmd.config.Username())}))
+
 		apps, apiErr = cmd.appSummaryRepo.GetSpaceSummaries(space.Guid)
 	} else {
 		cmd.ui.Say(T("Getting apps in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",

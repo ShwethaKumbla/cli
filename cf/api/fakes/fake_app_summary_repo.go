@@ -30,6 +30,7 @@ func (repo *FakeAppSummaryRepo) GetSummary(appGuid string) (summary models.Appli
 
 	return
 }
+
 func (repo *FakeAppSummaryRepo) GetSpaceSummaries(spaceGuid string) (apps []models.Application, apiErr error) {
 	repo.GetSpaceGuid = spaceGuid
 	apps = repo.GetSpaceSummariesApps

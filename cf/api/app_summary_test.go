@@ -77,6 +77,7 @@ var _ = Describe("AppSummaryRepository", func() {
 		nullUpdateAtApp := apps[2]
 		Expect(nullUpdateAtApp.PackageUpdatedAt).To(BeNil())
 	})
+
 	It("returns a slice of app summaries for each instance in specified space", func() {
 		space := models.Space{}
 		space.Name = "my-space"
