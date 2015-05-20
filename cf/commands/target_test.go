@@ -2,6 +2,7 @@ package commands_test
 
 import (
 	"errors"
+	"fmt"
 
 	testapi "github.com/cloudfoundry/cli/cf/api/fakes"
 	fake_org "github.com/cloudfoundry/cli/cf/api/organizations/fakes"
@@ -43,6 +44,7 @@ var _ = Describe("target command", func() {
 	}
 
 	It("fails with usage when called with an argument but no flags", func() {
+		fmt.Println("I am here")
 		callTarget([]string{"some-argument"})
 		Expect(ui.FailedWithUsage).To(BeTrue())
 	})
